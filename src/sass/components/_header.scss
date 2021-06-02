@@ -1,0 +1,235 @@
+div.search-location__slider-list-item {
+    margin-right: 10px;
+}
+
+.input-box {
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.input-form {
+  background-color: white;
+  padding: 14px 24px;
+  position: relative;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 14px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    top: 25%;
+    background: url(../images/icon-location.png) no-repeat center;
+    opacity: 0.3;
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+  }
+
+  .search-box {
+    border: none;
+    padding: 0;
+    padding-left: 34px;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    width: 75%;
+    outline: none;
+
+    &::placeholder {
+      color: black;
+      font-size: 14px;
+    }
+  }
+
+  .btn {
+    fill: #000000;
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    transform: translateY(-50%);
+    opacity: 0.471;
+    border: none;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    transition: fill 200ms linear;
+    background: url(../images/icon-location.png) no-repeat center;
+  }
+}
+
+.favorite-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 4px;
+    height: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.left,
+.right {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.left {
+  margin-right: 4px;
+}
+
+.right {
+  margin-left: 4px;
+}
+
+.city-list {
+  opacity: 0.7;
+  width: 230px;
+}
+
+.fav-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0);
+}
+
+.search-location__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 178px;
+    height: 27px;
+  }
+
+  &-list-item {
+    border-radius: 12px;
+    background-color: rgb(16, 33, 54);
+    // opacity: 0.471;
+    padding: 5px 12px 5px 12px;
+    transition: opacity 200ms linear;
+    // width: 86px;
+    // &:not(:last-child) {
+    //   margin-right: 10px;
+    // }
+  }
+
+  &-list-item:hover,
+  &-list-item:focus {
+    opacity: 1;
+  }
+
+  &-list-content {
+    display: flex;
+    font-size: 12px;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-list-sity {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12px;
+
+    width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-list-sity::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 1px;
+  }
+
+  &-list-content-renove-city__button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+
+    margin-left: 10px;
+
+    border: none;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    outline: none;
+    padding: 0;
+    color: white;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .left {
+    margin-right: 10px;
+}
+
+  .right {
+    margin-left: 6px;
+  }
+
+  .city-list {
+    width: 420px;
+  }
+
+  .favorite-box {
+    padding-right: 121px;
+    padding-left: 121px;
+  }
+  .input-box {
+    width: 510px;
+    padding-top: 60px;
+  }
+
+  .search-box {
+    font-size: 18px;
+    width: 85%;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .input-box {
+    padding: 79px 0 0 0;
+  }
+
+  .city-list {
+    width: 440px;
+  }
+
+  .favorite-box {
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 92px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

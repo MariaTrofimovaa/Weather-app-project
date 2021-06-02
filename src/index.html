@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="input-box">
+        <form class="input-form">
+          <input class="search-box" type="text" placeholder="Enter the city" name="query" />
+
+          <button class="favorite-btn btn" type="button">
+            <img src="./images/fav-icon.png" alt="favorite-btn" />
+          </button>
+        </form>
+      </div>
+
+      <div class="favorite-box">
+        <div>
+          <button class="left" hidden>
+            <img src="./images/arrowLeft.png" alt="fav-arrow-left" />
+          </button>
+        </div>
+
+        <div class="city-list"></div>
+
+        <div>
+          <button class="right" hidden>
+            <img src="./images/arrowRight.png" alt="fav-arrow-left" />
+          </button>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="weather-box">
+          <div class="one-day" id="oneday"></div>
+          <div class="button-box">
+            <button class="one-day-btn button is-active" id="todayBtn" data-action="today">
+              today
+            </button>
+            <button class="five-day-btn button" id="fiveDaysBtn" data-action="fiveDays">
+              5 days
+            </button>
+          </div>
+          <div class="calendar-desktop">
+            <div class="date"></div>
+            <div class="additional-info">
+              <p class="quote">
+                Who cares about the clouds when we're together? Just sing a song and bring the sunny
+                weather.
+              </p>
+              <p class="quote-author">Dale Evans</p>
+            </div>
+          </div>
+
+          <div class="more-info-weather">
+            <div class="fivedays-weather" hidden></div>
+          </div>
+
+          <div class="fivedays-chart" hidden></div>
+        </div>
+      </div>
+    </section>
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+.more-info {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  padding-top: 8px;
+
+  list-style: none;
+  min-width: 120px;
+  height: 220px;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff8a;
+  border: 1px solid #ffffff8a;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0;
+    padding-top: 4px;
+  }
+
+  &-time {
+    font-size: 12px;
+    line-height: 1.833;
+    margin-top: 15px;
+  }
+  &-temp {
+    font-size: 18px;
+    color: #ff6b08;
+    line-height: 1.222;
+    margin-bottom: 15px;
+    &-icon {
+      margin: 0 auto;
+      width: 60px;
+      height: 60px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+  }
+  &-data {
+    text-align: left;
+    list-style: none;
+    padding-left: 12px;
+  }
+  &-pressure {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    &::before {
+      content: url('../images/pressure.svg');
+      // width: auto;
+      // height: auto;
+      padding-right: 10px;
+      vertical-align: middle;
+    }
+  }
+  &-humidity {
+    margin-bottom: 5px;
+    &::before {
+      content: url('../images/humidity.svg');
+      // width: auto;
+      // height: auto;
+      padding-right: 10px;
+      // padding-left: 7px;
+      vertical-align: middle;
+    }
+  }
+  &-wind {
+    &::before {
+      content: url('../images/wind.svg');
+      // width: auto;
+      // height: auto;
+      padding-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.hours-weather {
+  //   font-family: lato;
+  opacity: 0.8;
+  @media screen and (min-width: 320px) {
+    // padding: 0 10px 35px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0 35px 25px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0 0 35px;
+  }
+}
+
+.more-info-list {
+  display: flex;
+  @media screen and (min-width: 320px) {
+    overflow-x: auto;
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    overflow: hidden;
+  }
+  @media screen and (min-width: 1280px) {
+    justify-content: space-evenly;
+    overflow: hidden;
+  }
+}
+.five-days-arrow {
+  width: 28px;
+  height: 28px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  transition: opacity 200ms linear;
+  outline: none;
+  img {
+    margin: 0 auto;
+  }
+  &_hidden {
+    opacity: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.five-days-containeer__scroll {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}

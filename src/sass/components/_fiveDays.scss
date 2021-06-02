@@ -1,0 +1,244 @@
+.fivedays-weather {
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+
+  width: 280px;
+  background: rgba(16, 33, 54, 0.8);
+  box-shadow: 0px 5px 33px rgba(16, 33, 54, 0.6);
+  border-radius: 34px;
+}
+
+.five-days-weather-list {
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.arrow {
+  display: flex;
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+.show-chart-list {
+  display: flex;
+}
+
+.five-days-weather-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.five-days-weather-list {
+  text-align: center;
+}
+
+.five-days-weather-item {
+  width: 82px;
+}
+
+.five-days-weather-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.show-chart-list {
+  text-align: center;
+}
+
+.five-days-weather-list:nth-child(4),
+.five-days-weather-list:last-child {
+  display: none;
+}
+
+.arrow-item {
+  cursor: pointer;
+}
+
+.arrow-item-left {
+  opacity: 0.5;
+  margin-right: 50px;
+}
+
+.arrow-item-right {
+  opacity: 0.5;
+}
+
+.arrow-item:hover,
+.arrow-item:focus {
+  opacity: 1;
+}
+
+.arrow-item-left:hover,
+.arrow-item-left:focus {
+  color: #fff;
+}
+
+.min-temperature-item.fiveday,
+.max-temperature-item.fiveday {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+}
+
+.show-more-info {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.66;
+  opacity: 0.3;
+  text-decoration: underline;
+  border: none;
+  cursor: pointer;
+}
+
+.min-temperature-item2.fiveday,
+.max-temperature-item2.fiveday {
+  color: #ff6b09;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.arrowBtn {
+  background-color: transparent;
+  border: none;
+}
+
+.is-active {
+  background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .fivedays-weather {
+    width: 620px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .five-days-weather-item {
+    width: 100px;
+  }
+
+  .five-days-weather-more-item {
+    margin-bottom: 10px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .temperature-item-one {
+    font-weight: 300;
+    font-size: 90px;
+    line-height: 1.2;
+  }
+
+  .city-title {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .min-temperature-item,
+  .min-temperature-item2,
+  .max-temperature-item,
+  .max-temperature-item2 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .five-days-weather-title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 1.21;
+  }
+
+  .show-more-info {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  .min-temperature-item.fiveday,
+  .max-temperature-item.fiveday {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #fff;
+  }
+
+  .five-days-weather-more-item {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  .five-days-weather-more-item2 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .fivedays-weather {
+    width: 1060px;
+    margin: 0 auto;
+  }
+
+  .five-days-weather-list {
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .five-days-weather-item:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  .five-days-weather-item {
+    width: 120px;
+  }
+
+  .five-days-weather-more-item {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .five-days-weather-more-item2 {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+  }
+
+  .min-temperature-item.fiveday,
+  .max-temperature-item.fiveday {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .min-temperature-item2.fiveday,
+  .max-temperature-item2.fiveday {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1.2;
+  }
+  .show-more-info {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}

@@ -1,0 +1,377 @@
+.date {
+  border-radius: 35px;
+  background-color: rgba(16, 33, 54, 0.59);
+  margin: 0 auto 63px;
+  color: #ffffff;
+  padding: 30px 0 40px 0;
+  letter-spacing: 0.04em;
+}
+
+.date:hover {
+  transition: 200ms linear;
+  background-color: #102136;
+}
+
+.date-day {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #f7f7f7;
+  line-height: 54px;
+}
+
+.date-month-time {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.date-month,
+.date-time {
+  margin: 0;
+}
+.date-month {
+  text-align: right;
+}
+
+.date-month,
+.date-sunrise {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.date-time,
+.date-sunset {
+  width: 80px;
+}
+// .date-month::after,
+// .date-sunrise-time::after {
+//   content: '';
+//   position: absolute;
+//   width: 1px;
+//   height: 20px;
+//   background-color: #e7e8eb;
+//   margin-left: 10px;
+// }
+
+.date-sun {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.date-sunrise,
+.date-sunset {
+  display: flex;
+  align-items: center;
+}
+
+.date-sunrise-icon,
+.date-sunset-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.date-month,
+.date-sunrise {
+  border-right: 1px solid rgb(255%, 255%, 255%, 0.4);
+  padding-right: 10px;
+}
+
+.quote {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.21em;
+  text-align: right;
+  letter-spacing: 0.04em;
+}
+
+.quote-author {
+  margin-bottom: 68px;
+  font-size: 18px;
+  line-height: 1.22em;
+  text-align: right;
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 768px) {
+  .date {
+    width: 500px;
+    margin: 0px auto 63px;
+  }
+  .date-month {
+    padding: 0;
+  }
+
+  .date-month,
+  .date-sunrise {
+    width: 90px;
+    margin-right: 10px;
+  }
+
+  .date-time,
+  .date-sunset {
+    width: 100px;
+  }
+
+  .date-month,
+  .date-sunrise {
+    border-right: 1px solid rgb(255%, 255%, 255%, 0.4);
+    padding-right: 10px;
+  }
+
+  .date-day {
+    font-weight: 300;
+    font-size: 90px;
+    line-height: 1.2em;
+  }
+  .date-month-time,
+  .date-sun {
+    font-size: 18px;
+    line-height: 1.22em;
+    font-weight: 400;
+  }
+  .quote {
+    font-size: 22px;
+    line-height: 26px;
+    width: 379px;
+    margin-left: auto;
+  }
+
+  .quote-author {
+    font-size: 18px;
+    line-height: 1.22em;
+    text-align: right;
+    letter-spacing: 0.04em;
+  }
+  .additional-info {
+    width: 500px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .date {
+    width: 630px;
+    height: 278px;
+    padding: 60px 0 90px 0;
+    margin: 0;
+    border-radius: 0px 34px 0px 0px;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .calendar-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .all-time-elem {
+    display: flex;
+    justify-content: center;
+  }
+
+  .date-month-time {
+    margin-bottom: 0;
+    margin-right: 45px;
+  }
+  .quote-author {
+    margin: 0;
+  }
+}
+
+// .data-quote-container {
+//   @media screen and (min-width: 1280px) {
+//     // align-items: center;
+//     display: flex;
+//     justify-content: space-between;
+//     margin-left: -110px;
+//   }
+// }
+
+// .date-container {
+//   width: 280px;
+//   height: 190px;
+//   border-radius: 35px;
+//   // filter: drop-shadow(0px 8px 21.5px rgba(16, 33, 54, 0.59));
+//   background-color: rgba(16, 33, 54, 0.59);
+//   margin: 0 auto;
+//   // margin-bottom: 43px;
+//   color: $main-white-color;
+//   font-family: $main-font;
+//   font-weight: 400;
+//   padding-top: 26px;
+// }
+
+// .date-container:hover {
+//   transition: 200ms linear;
+//   background-color: #102136;
+// }
+
+// .date {
+//   width: 88%;
+//   border-radius: 35px;
+//   font-weight: 400;
+//   background-color: rgba(16, 33, 54, 0.59);
+//   margin: 0 auto 63px;
+//   color: #ffffff;
+//   padding: 30px 0 40px 0;
+//   letter-spacing: 0.04em;
+// }
+// .date:hover {
+//   transition: 200ms linear;
+//   background-color: #102136;
+// }
+
+// .date-day {
+//   text-align: center;
+//   font-size: 45px;
+//   letter-spacing: 1px;
+//   color: #f7f7f7;
+//   font-weight: 300;
+//   margin-bottom: 5px;
+// }
+// .date-month-time {
+//   font-size: 14px;
+//   display: flex;
+//   height: 24px;
+//   margin: 0 auto;
+//   justify-content: center;
+//   align-items: flex-end;
+// }
+// .date-month,
+// .date-time {
+//   width: 130px;
+// }
+// .date-month {
+//   text-align: right;
+// }
+// .date-month::after,
+// .date-sunrise-time::after {
+//   content: '';
+//   position: absolute;
+//   width: 1px;
+//   height: 20px;
+//   background-color: #e7e8eb;
+//   margin-left: 10px;
+// }
+
+// .date-sun {
+//   font-size: 14px;
+//   display: flex;
+//   width: 170px;
+//   height: 40px;
+//   margin: 5px auto 0px;
+//   justify-content: center;
+//   align-items: flex-end;
+// }
+
+// .date-sunrise,
+// .date-sunset {
+//   display: flex;
+//   width: 75px;
+//   justify-content: space-between;
+//   align-items: flex-end;
+// }
+// .date-month,
+// .date-sunrise {
+//   margin-right: 10px;
+// }
+// .date-time,
+// .date-sunset {
+//   margin-left: 10px;
+// }
+// .date-sunrise-icon,
+// .date-sunset-icon {
+//   height: 20px;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .date-container {
+//     width: 490px;
+//     height: 277px;
+//     padding-top: 36px;
+//   }
+//   .date-day {
+//     font-size: 90px;
+//     margin-bottom: 0px;
+//   }
+//   .date-day--nth {
+//     font-size: 23px;
+//   }
+//   .date-month-time,
+//   .date-sun {
+//     font-size: 18px;
+//   }
+//   .date-sun {
+//     margin-top: 20px;
+//   }
+
+//   .date-month,
+//   .date-sunrise {
+//     margin-right: 15px;
+//   }
+//   .date-time,
+//   .date-sunset {
+//     margin-left: 15px;
+//   }
+//   .date-sun {
+//     width: 194px;
+//   }
+//   .date-month::after,
+//   .date-sunrise-time::after {
+//     margin-left: 15px;
+//   }
+//   .date-sunrise,
+//   .date-sunset {
+//     width: 85px;
+//   }
+// }
+
+// @media screen and (min-width: 1280px) {
+//   .date {
+//     width: 601px;
+//     height: 277px;
+//     // border-radius: 0px;
+//     // border-top-right-radius: 35px;
+//     margin: 0px;
+//     padding: 50px 63px 96px 110px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-start;
+//     flex-wrap: wrap;
+//   }
+//   .date-day {
+//     text-align: left;
+//     width: 430px;
+//     margin: 0px;
+//   }
+//   .date-month-time {
+//     display: flex;
+//     height: 22px;
+//     width: auto;
+//     margin: 0;
+//     justify-content: left;
+//     align-items: flex-end;
+//   }
+//   .date-month {
+//     width: auto;
+//   }
+//   .date-time {
+//     width: 85px;
+//   }
+//   .date-month {
+//     text-align: left;
+//   }
+//   .date-sun {
+//     height: 22px;
+//     margin: 0px;
+//   }
+// }

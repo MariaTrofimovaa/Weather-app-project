@@ -1,0 +1,51 @@
+<h2 class='five-days-weather-title'>{{city}}, {{country}}</h2>
+<ul class='five-days-weather-list'>
+  {{#each weatherParams}}
+    <li class='five-days-weather-item'>
+      <ul class='five-days-weather-more-list'>
+        <li class='five-days-weather-more-item'>{{dayOfWeek}}</li>
+        <li class='five-days-weather-more-item2'>{{day}} {{month}}</li>
+        <li class='five-days-weather-more-item'>
+          <img src='{{icon}}' alt='' class='picture' />
+        </li>
+        <li class='five-days-weather-more-item'>
+          <ul class='nim-max-temperature'>
+            <li class='min-temperature'>
+              <p class='min-temperature-item fiveday'>min</p>
+              <p class='min-temperature-item2 fiveday'>{{temp.tempMin}}&deg</p>
+            </li>
+            <li class='max-temperature'>
+
+              <p class='max-temperature-item fiveday'>max</p>
+              <p class='max-temperature-item2 fiveday'>{{temp.tempMax}}&deg</p>
+            </li>
+          </ul>
+        </li>
+        <li class='five-days-weather-more-item'>
+          <button type='button' class='show-more-info' data-day='{{day}}'>more info</button>
+        </li>
+      </ul>
+    </li>
+  {{/each}}
+</ul>
+
+<ul class='arrow'>
+  <li class='arrow-item arrow-item-left'>
+    <button class='arrowBtn left-btn' type='button'>
+      <img src='{{arrowLeft}}' alt='стрелка влево' />
+    </button>
+  </li>
+  <li class='arrow-item arrow-item-right'>
+    <button class='arrowBtn right-btn' type='button'>
+      <img src='{{arrowRight}}' alt='стрелка вправо' />
+    </button>
+  </li>
+</ul>
+
+<div class='hours-weather visually-hidden'>
+  <ul class='more-info-list'></ul>
+  <div class='five-days-containeer__scroll'>
+    <img id='left-arrow' src='{{arrowLeftInfo}}' alt='left-arrow' class='five-days-arrow' />
+    <img id='right-arrow' src='{{arrowRigfhtInfo}}' alt='right-arrow' class='five-days-arrow' />
+  </div>
+</div>

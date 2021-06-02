@@ -1,0 +1,193 @@
+.is-active {
+  background-color: #fff;
+}
+
+.one-day {
+  width: 280px;
+  margin-top: 45px;
+  color: #fff;
+  background-color: #102136;
+  width: 100%;
+  padding: 30px 56px;
+  border-radius: 34px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.five-days-weather-more-item {
+  opacity: 0.55;
+}
+
+.city-title,
+.min-temperature-item,
+.max-temperature-item {
+  color: #767d85;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.city {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.min-temperature {
+  border-right: 1px solid #27384a;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.temperature-item {
+  margin-bottom: 4px;
+}
+
+.min-temperature-item2,
+.max-temperature-item2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.temperature-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.nim-max-temperature {
+  display: flex;
+  justify-content: space-between;
+}
+
+.temperature-item-one {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 54px;
+  letter-spacing: 0.04em;
+
+  margin-top: 10px;
+}
+
+.weather-btn {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.one-day-btn {
+  margin-right: 14px;
+}
+
+.one-day-btn.button:hover,
+.one-day-btn.button:focus,
+.five-day-btn.button:hover,
+.five-day-btn.button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.button-box {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.21;
+  text-transform: uppercase;
+
+  background: rgba(255, 255, 255, 0.5);
+  width: 126px;
+  padding: 6px 36px;
+  border-radius: 20px;
+  border: none;
+
+  margin-bottom: 30px;
+}
+
+.picture {
+  display: inline-block;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .one-day {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 110px;
+    padding: 29px 190px 36px 190px;
+  }
+
+  .button-box {
+    margin-top: 65px;
+  }
+
+  .temperature-list {
+    display: block;
+  }
+
+  .nim-max-temperature {
+    justify-content: center;
+  }
+
+  .button {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .one-day {
+    width: 450px;
+    margin: 0 0 20px auto;
+    border-radius: 34px 0px 0px 34px;
+    padding: 29px 0 36px 0;
+    margin-top: 92px;
+  }
+
+  .temperature-item-one {
+    font-size: 90px;
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+
+  .city-title {
+    margin-bottom: 10px;
+  }
+
+  .temperature-list {
+    display: block;
+  }
+
+  .nim-max-temperature {
+    justify-content: center;
+  }
+
+  .min-temperature-item,
+  .max-temperature-item,
+  .min-temperature-item2,
+  .max-temperature-item2 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .button-box {
+    text-align: right;
+    margin-right: 110px;
+  }
+
+  .arrowBtn {
+    background-color: transparent;
+    border: none;
+  }
+}
